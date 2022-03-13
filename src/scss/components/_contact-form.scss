@@ -1,0 +1,74 @@
+.contact-form {
+    position: relative;
+    margin: 40px 0 80px;
+    padding: 65px 0 0;
+    .contact {
+        position: relative;
+    }
+    .content {
+        width: 100%;
+        max-width: 318px;
+        h2 {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 46px;
+            color: #1A1A1A;
+            p {
+                font-size: 52px;
+                line-height: 46px;
+                font-weight: 800;
+            }
+        }
+        span {
+            font-weight: 300;
+            font-size: 19px;
+            line-height: 24px;
+            display: block;
+            margin: 16px 0 24px;
+        }
+        form {
+            input {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 7px 16px;
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 12px;
+                height: 48px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                &::placeholder {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #7B8E98
+                }
+                &.email {
+                    margin: 8px 0 24px;
+                }
+            }
+            button {
+                width: 130px;
+                height: 48px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background: #FFFFFF;
+                border-radius: 87px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #1A1A1A;
+            }
+
+       }
+    }
+    .dog {
+        position: absolute;
+        right: 40px;
+        bottom: -79px;
+    }
+}

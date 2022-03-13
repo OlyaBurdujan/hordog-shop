@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('layouts/head.html', {
+        "title": "Статья"
+    })
+
+<body>
+
+    @@include('layouts/header.html', {})
+    
+    <div class="page__title">
+        <div class="container">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Назад </a>
+                </a>
+                <div class="page__heading">
+                    <p>Шлейки для собак</p>
+                </div>
+                <div class="page__heading_description">
+                    <p>Кратко отвечаем на популярные вопросы</p>
+                    <span>05 окт 2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="article">
+        <div class="container">
+            <div class="article__content">
+                <img class="img-fluid" src="@img/news/article.png" alt="">
+                <div class="article__description">
+                    <h2>Что нужно знать о повседневных шлейках?</h2>
+                    <p>Повседневные шлейки подходят для прогулок и туризма. Обычно у них одна-две ручки и четыре — шесть точек регулировки на
+                собаке. Сейчас почти все прогулочные шлейки известных брендов оснащены грудным кольцом — для коррекции поведения и
+                обучения собаки хождению рядом с хозяином.</p>
+                    <div class="placeholder">
+                        <img src="@img/icons/ic-quote.svg" alt="">
+                        <span>Повседневные шлейки сделаны из водо- и грязеотталкивающего материала, у них дышащий внутренний слой. Почти все модели
+                        очень лёгкие.</span>
+                    </div>
+                    <h2>Какие бывают специальные шлейки?</h2>
+                    <p>Специальные шлейки делят на модели для повышения мобильности пожилых или больных животных, автошлейки, шлейки спортивные
+                    и коррекционные.</p>
+                    <p>Шлейки для повышения мобильности больных или пожилых животных помогают собакам при движении. Владелец может сам
+                    переставлять передние и задние лапы животного и даже при необходимости положить животное на плечо (это возможно даже для
+                    крупных пород до 60 кг). Такие шлейки подбираются строго по весу и рассчитаны на собак весом от 3 до 60 кг.</p>
+                    <p>Автошлейки нужны для безопасного провоза животного в автомобиле. Их также подбирают, учитывая вес собаки. При
+                    приобретении необходимо узнать, прошло ли изделие краш-тесты.</p>
+                    <p>Спортивные шлейки — это шлейки для занятий спортом с собакой.</p>
+                    <p>Коррекционные шлейки — это обычные шлейки с передним кольцом, для коррекции поведения собаки при движении.</p>
+                    <h2>Надо ли сначала выгуливать щенка со шлейкой или лучше сразу надевать ошейник?</h2>
+                    <p>Всё зависит от породы и темперамента собаки. Если щенок пуглив или, наоборот, тянет поводок, на прогулке резко прыгает,
+                    значит, нужна шлейка. Если питомец сразу спокойно идёт с хозяином и находится с ним в постоянном контакте, можно гулять
+                    в ошейнике.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news read__more">
+        <div class="container">
+            <div class="title">Почитать еще</div>
+            <div class="articles">
+                <div class="aricle">
+                    <img class="img-fluid" src="@img/news/image1.png" alt="">
+                    <div class="description">
+                        <p class="pubdate">
+                            <img src="@img/icons/ic-calendar.svg" alt="">
+                            <time pubdate datetime="2021-05-12">12 май 2021</time>
+                        </p>
+                        <a class="title-article" href="">Дрессировка щенка: что нужно знать</a>
+                    </div>
+                </div>
+                <div class="aricle">
+                    <img class="img-fluid" src="@img/news/image2.png" alt="">
+                    <div class="description">
+                        <p class="pubdate">
+                            <img src="@img/icons/ic-calendar.svg" alt="">
+                            <time pubdate datetime="2021-07-08">08 июл 2021
+                        </p>
+                        <a class="title-article" href="">Идём гулять с собакой в лес</a>
+                    </div>
+                </div>
+                <div class="aricle">
+                    <img class="img-fluid" src="@img/news/image3.png" alt="">
+                    <div class="description">
+                        <p class="pubdate">
+                            <img src="@img/icons/ic-calendar.svg" alt="">
+                            <time pubdate datetime="2021-08-16">16 авг 2021</time>
+                        </p>
+                        <a class="title-article" href="">Сухие корма для собак</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+</body>
+</html>

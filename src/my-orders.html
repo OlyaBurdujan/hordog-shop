@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Мои заказы"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-small">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Назад </a>
+                </a>
+                <div class="page__heading">
+                    <p>Мои заказы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders">
+        <div class="container container-small">
+            <h3>Заказы</h3>
+            <div class="order__info">
+                <div class="first__order">
+                    <div class="number__order">
+                        <h4>Заказ № 03825208-0004</h4>
+                        <div class="delivery__data">
+                            <p>4 сен 2021</p>
+                            <span>Доставляется</span>
+                        </div>
+                    </div>
+                    <div class="order__price">2 740 ₽</div>
+                </div>
+                <div class="delivery__address">
+                    <div class="delivery__left">
+                        <div class="delivery__address_info">
+                            <img src="./img/icons/ic-truck.svg" alt="">
+                            <p>Доставка в пункт выдачи</p>
+                        </div>
+                        <div class="delivery__address_info">
+                            <img src="./img/icons/ic-calendar2.svg" alt="">
+                            <p>Можно забрать 12 сентября</p>
+                        </div>    
+                    </div>   
+                    <div class="order__product_img">
+                        <img src="./img/products/order_product.png" alt="">
+                        <img src="./img/products/order_product2.png" alt="">
+                        <img src="./img/products/order__product3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="order__info">
+                <div class="first__order">
+                    <div class="number__order">
+                        <h4>Заказ № 08647688-0123</h4>
+                        <div class="delivery__data">
+                            <p>21 окт 2021</p>
+                            <span class="second-order">Обрабатывается</span>
+                        </div>
+                    </div>
+                    <div class="order__price">990 ₽</div>
+                </div>
+                <div class="delivery__address">
+                    <div class="delivery__left">
+                        <div class="delivery__address_info">
+                            <img src="./img/icons/ic-truck.svg" alt="">
+                            <p>Доставка курером</p>
+                        </div>
+                        <div class="delivery__address_info">
+                            <img src="./img/icons/ic-calendar2.svg" alt="">
+                            <p>Достявят 23 октября</p>
+                        </div>
+                    </div>
+                    <div class="order__product_img">
+                        <img src="./img/products/order__product4.png" alt="">
+                        <img src="./img/products/order__product5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products bought__products">
+        <div class="container container-small">
+            <div class="title">Купленные товары</div>
+            <div class="product__items bought__products">
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_5.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 380 ₽</span>
+                    </div>
+                    <div class="count">1 кг.</div>
+                    <a class="product__title" href="">Желудки утиные сушено-вяленые</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_6.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 300 ₽</span>
+                    </div>
+                    <div class="count">100 г.</div>
+                    <a class="product__title" href="">Мелкая говяжья сушено-вяленая жилка</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_7.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">14 шт</div>
+                    <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердце говяжье)</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_8.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 330 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Свиные уши для собак</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_9.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 590 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_10.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 790 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_11.png" alt="">
+                    <div class="prices">
+                        <span class="old_price">550 ₽</span>
+                        <span class="price new_price">495 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Бублик из бычьего корня</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_12.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

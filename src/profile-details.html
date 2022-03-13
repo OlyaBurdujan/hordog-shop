@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Мои данные"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-small">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Назад </a>
+                </a>
+                <div class="page__heading">
+                    <p>Мои данные</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="my__details">
+        <div class="container container-small">
+            <form class="form__user_info" action="">
+                <div class="user__info">
+                    <div class="form__info">
+                        <label for="">Имя</label>
+                        <input type="text" name="first_name" id="" value="Александр" placeholder="">
+                    </div>
+                    <div class="form__info">
+                        <label for="">Фамилия</label>
+                        <input type="text" name="first_name" id="" value="Суворов" placeholder="">
+                    </div>
+                    <div class="form__info">
+                        <label for="">Телефон</label>
+                        <input type="text" name="first_name" id="" value="+7 (977)980-12-09" placeholder="">
+                    </div>
+                    <div class="form__info">
+                        <label for="">Почта</label>
+                        <input type="text" name="first_name" id="" value="alexander@mail.com" placeholder="">
+                    </div>
+                </div> 
+                <button class="btn__save" type="button">Сохранить</button>
+            </form>
+            
+            <form class="form__password" action="">
+                <div class="change__password">
+                    <h5>Изменить пароль</h5>
+                    <input class="old__password" type="password" placeholder="Старый пароль">
+                    <input class="new__password" type="password" placeholder="Новый пароль">
+                </div> 
+                <button class="btn__save" type="button">Сохранить</button>
+            </form>
+            
+
+        </div>
+    </div>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

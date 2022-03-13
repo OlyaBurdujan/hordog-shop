@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Профиль"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-small">
+            <div class="page__content">
+                <div class="page__heading promotions">
+                    <p>Профиль</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="person">
+        <div class="container container-small">
+            <div class="person__content">
+                <div class="person__info">
+                    <p>Александр Суворов</p>
+                    <div class="person__info_phone">
+                        <img src="./img/icons/ic-phone.svg" alt="">
+                        <a href="tel:+7 (977) 980-12-09">+7 (977) 980-12-09</a>
+                    </div>
+                    <div class="person__info_mail">
+                        <img src="./img/icons/ic-mail.svg" alt="">
+                        <a href="mailto:alexander@mail.com">alexander@mail.com</a>
+                    </div>
+                    <button type="button">Изменить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders profile">
+        <div class="container container-small">
+            <h3>Мои заказы</h3>
+            <div class="orders__info">
+                <div class="order__info profile">
+                    <div class="first__order">
+                        <div class="number__order">
+                            <h4>Заказ № 03825208-0004</h4>
+                            <div class="delivery__data">
+                                <p>4 сен 2021</p>
+                                <span>Доставляется</span>
+                            </div>
+                        </div>
+                        <div class="order__price">2 740 ₽</div>
+                    </div>
+                    <div class="delivery__address">
+                        <div class="delivery__left">
+                            <div class="delivery__address_info">
+                                <img src="./img/icons/ic-truck.svg" alt="">
+                                <p>Доставка в пункт выдачи</p>
+                            </div>
+                            <div class="delivery__address_info">
+                                <img src="./img/icons/ic-calendar2.svg" alt="">
+                                <p>Можно забрать 12 сентября</p>
+                            </div>
+                        </div>
+                        <div class="order__product_img">
+                            <img src="./img/products/order_product.png" alt="">
+                            <img src="./img/products/order_product2.png" alt="">
+                            <img src="./img/products/order__product3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="order__info profile">
+                    <div class="first__order">
+                        <div class="number__order">
+                            <h4>Заказ № 08647688-0123</h4>
+                            <div class="delivery__data">
+                                <p>21 окт 2021</p>
+                                <span class="second-order">Обрабатывается</span>
+                            </div>
+                        </div>
+                        <div class="order__price">990 ₽</div>
+                    </div>
+                    <div class="delivery__address">
+                        <div class="delivery__left">
+                            <div class="delivery__address_info">
+                                <img src="./img/icons/ic-truck.svg" alt="">
+                                <p>Доставка курером</p>
+                            </div>
+                            <div class="delivery__address_info">
+                                <img src="./img/icons/ic-calendar2.svg" alt="">
+                                <p>Достявят 23 октября</p>
+                            </div>
+                        </div>
+                        <div class="order__product_img">
+                            <img src="./img/products/order__product4.png" alt="">
+                            <img src="./img/products/order__product5.png" alt="">
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            <button type="button">
+                <p>Все заказы</p>
+                <img src="./img/icons/ic-right-arrow.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <div class="profile__delivery">
+        <div class="container container-small">
+            <h3>Адреса доставки</h3>
+            <div class="profile__delivery_content">
+                <label class="profile__address">
+                    <input name="" value="" type="checkbox">
+                    <div class="profile__info">
+                        <div class="headline">
+                            <p>Крутые Ключи</p>
+                            <img src="./img/icons/ic-trash.svg" alt="">
+                        </div>
+                        <div class="home__address">
+                            <img src="./img/icons/ic-home.svg" alt="">
+                            <p>Россия, 443001 , обл. Самарская, г. Самара, промышленная зона Крутые Ключи, д. 33</p>
+                        </div>
+                    </div>
+                </label>
+                <label class="profile__address ozon">
+                    <input name="" value="" type="checkbox">
+                    <div class="profile__info">
+                        <div class="headline">
+                            <div class="title">
+                                <img src="./img/icons/ozon.svg" alt="">
+                                <p>Пункт Ozon</p>   
+                            </div>
+                            
+                            <img src="./img/icons/ic-trash.svg" alt="">
+                        </div>
+                        <div class="home__address">
+                            <img src="./img/icons/ic-store-profile.svg" alt="">
+                            <p>Россия, обл. Самарская, г. Самара, ул. Пушкина, д. 194</p>
+                        </div>
+                    </div>
+                </label>
+                <button class="profile__address_add" type="button">
+                    <img src="./img/icons/ic-plus-profile.svg" alt="">
+                    <p>Добавить адрес</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards__profile">
+        <div class="container container-small">
+            <h3>Карты оплаты</h3>
+            <div class="cards__content">
+                <label class="profile__card">
+                    <input name="" value="" type="checkbox">
+                    <div class="card__number">
+                        <div class="headline">
+                            <div class="mastercard">
+                                <img src="./img/icons/logo-mastercard.svg" alt="">
+                                <p>Mastercard •••• 5334</p>    
+                            </div>
+                            <img src="./img/icons/ic-trash.svg" alt="">
+                        </div>
+                        <span>Оплата картой онлайн на сайте</span>
+                    </div>
+                </label>
+                <button class="profile__card_add" type="button">
+                    <img src="./img/icons/ic-plus-profile.svg" alt="">
+                    <p>Добавить адрес</p>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="exit">
+        <div class="container container-small">
+            <button type="button">Выйти</button>  
+        </div>
+          
+    </div>
+    
+
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

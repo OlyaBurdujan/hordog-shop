@@ -1,0 +1,125 @@
+.form__add_review {
+    border-top: 1px solid #ECEFF1;
+    padding: 40px 0;
+    margin-bottom: 65px;
+    .form__group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 40px;
+        &:first-child {
+            align-items: center;
+        }
+
+        .group__title {
+            margin-right: 40px;
+            width: 160px;
+            min-width: 160px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        textarea {
+            width: 100%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 14px 16px;
+            background: #FFFFFF;
+            border: 1px solid #CFD8DC;
+            border-radius: 12px;
+            height: 88px;
+            resize: none;
+            &:focus-visible {
+                outline: none;
+            }
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #7B8E98;
+            }
+        }
+        .group__file {
+            display: flex;
+            align-items: center;
+            background: #FFFFFF;
+            border: 1px dashed #CFD8DC;
+            border-radius: 12px;
+            height: 80px;
+            padding: 14px 16px;
+            width: 100%;
+            input { 
+                opacity: 0;
+                overflow: hidden;
+                z-index: -1;
+            }
+            label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #7B8E98;
+                cursor: pointer;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .rating { 
+        border: none;
+        float: left;
+    }
+
+    .rating > input { display: none; } 
+    .rating > label:before { 
+        margin: 0;
+        font-size: 32px;
+        font-family: FontAwesome;
+        display: inline-block;
+        content: "\f005";
+        margin-right: 8px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .rating > .half:before { 
+    content: "\f089";
+    position: absolute;
+    }
+
+    .rating > label { 
+        color: #ddd; 
+        float: right; 
+        cursor: pointer;
+        
+    }
+
+    .rating > input:checked ~ label,
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label { color: #FFD700;  }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked ~ label:hover,
+    .rating > label:hover ~ input:checked ~ label, 
+    .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+    .form__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 24px;
+        background: #FED700;
+        border-radius: 55px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

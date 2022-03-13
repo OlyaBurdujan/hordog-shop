@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "О нас"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Назад </a>
+                </a>
+                <div class="page__heading">
+                    <p>Избранное</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="no__products_found favorites">
+        <div class="container">
+            <img src="@img/search/no_found/ic-notfound.png" alt="">
+            <h6>В Избранном пока ничего нет</h6>
+            <p>Добавляйте товары в Избранное с помощью ❤️️</p>
+            <button href="">На главную</button>
+        </div>
+    </div>
+
+    <div class="products favorites">
+        <div class="container">
+            <div class="title">Вы смотрели</div>
+            <div class="product__items last-section">
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_17.png" alt="">
+                    <div class="prices">
+                        <span class="price">590 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_18.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 790 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_19.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_20.png" alt="">
+                    <div class="prices">
+                        <span class="old_price"> 550 ₽</span>
+                        <span class="price new_price"> 495 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Бублик из бычьего корня</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_21.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 340 ₽</span>
+                    </div>
+                    <div class="count">14 шт</div>
+                    <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердечко</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

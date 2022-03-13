@@ -1,0 +1,269 @@
+.orders__status {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+    p {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        margin-right: 12px;
+    }
+    span {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2px 8px;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 14px;
+        height: 19px;
+        color: #FFFFFF;
+        border-radius: 20px;
+    }
+    .status {
+        &__delivering {
+            background: #03A9F4;
+        }
+        &__processing { 
+            background: #7B8E98;
+        }
+    }
+}
+
+.ordered__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    border-top: 1px solid #ECEFF1;;
+    &:first-child {
+        border-top: none;
+    }
+    &:last-child {
+        border-bottom: 1px solid #ECEFF1;
+        padding-bottom: 24px;
+    }
+    &_img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 292px;
+        max-width: 292px;
+        width: 100%;
+        img {
+            margin-right: 16px;
+        }
+        .ordered__item_title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            h5 {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 8px;
+            }
+            span {
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 14px;
+                color: #7B8E98;
+            }
+        }
+    }
+    &_count {
+        max-width: 237px;
+        width: 100%;
+        margin: 0 32px;
+        P {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;    
+            text-align: center;
+        }
+    }
+    &_prices {
+        display: flex;
+        flex-direction: column;
+        min-width: 119px;
+        max-width: 119px;
+        width: 100%;
+        text-align: right;
+        .old_price {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration-line: line-through;
+        }
+        .price {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .new_price {
+            color: #F44336;
+        }
+    }
+    &_gift {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+        // width: 119px;
+        // height: 42px;
+        background: rgba(236, 239, 241, 0.5);
+        border-radius: 8px;
+        img {
+            margin-right: 8px;
+        }
+
+        .gift__text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            p {
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 14px;
+            }
+            span {
+                font-weight: 600;
+                font-size: 9px;
+                line-height: 12px;
+            }
+        }
+
+
+    }
+}
+
+.order__point {
+    margin: 24px 0;
+    border-bottom: 1px solid #ECEFF1;
+    h2 {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .order__shop {
+        margin: 24px 0;
+        .name__shop {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            img {
+                margin-right: 8px;
+            }
+            p {
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                margin-right: 12px;
+            }
+        }
+    }
+}
+
+.recipient {
+    border-bottom: 1px solid #ECEFF1;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    h2 {
+        margin-bottom: 24px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .recipient__info {
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            margin-right: 12px;
+        }
+    }
+}
+
+.payment {
+    margin-bottom: 60px;
+    h2 {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .payment__info {
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #ECEFF1;
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 24px;
+                border-bottom: none;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: #7B8E98;
+            }
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                &.payment__sale {
+                    color: #F44336;
+                }
+            }
+        }
+    }
+    .total__price {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        p {
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        span {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+}

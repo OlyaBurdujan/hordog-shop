@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Контакты"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container">
+            <div class="page__content">
+                <div class="page__heading contacts">
+                    <p>Контакты</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact__content">
+        <div class="container">
+            <div class="contact__info">
+                <div class="address__info">
+                    <h5>Адрес</h5>
+                    <ul class="address__details">
+                        <li>
+                            <img src="./img/icons/ic-location.svg" alt="">
+                            <p>г. Йошкар-Ола, Ленинский проспект, д. 12</p>
+                        </li>
+                        <li>
+                            <img src="./img/icons/ic-phone.svg" alt="">
+                            <a href="tel:8-917-717-21-79">8-917-717-21-79</a>
+                        </li>
+                        <li>
+                            <img src="./img/icons/ic-mail.svg" alt="">
+                            <a href="mailto:hordog.ru@gmail.com">hordog.ru@gmail.com</a>
+                        </li>
+                        <h6>ИП Чижова Мария Николаевна ИНН 891301550270</h6>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2194.7580814132343!2d47.9170984158648!3d56.62683098079617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415994da7a75fc67%3A0x9c9cc3ae6bb1e3d8!2z0JvQtdC90LjQvdGB0LrQuNC5INC_0YAuLCAxMiwg0JnQvtGI0LrQsNGALdCe0LvQsCwg0KDQtdGB0L8uINCc0LDRgNC40Lkg0K3Quywg0KDQvtGB0YHQuNGPLCA0MjQwMzg!5e0!3m2!1sru!2s!4v1643024960486!5m2!1sru!2s"
+                        width="672" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact">
+                <div class="content">
+                    <h2>Остались <p>вопросы?</p>
+                    </h2>
+                    <span>Заполните пожалуйста поля ниже, чтобы мы могли связаться с вами</span>
+                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                        <input class="first__name" type="text" id="fname" name="firstname" placeholder="Ваше имя">
+                        <input class="email" type="email" id="email" placeholder="Телефон или Email">
+                        <button class="submit">Отправить</button>
+                    </form>
+                </div>
+                <img class="dog" src="@img/dog.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="background__bottom"></div>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

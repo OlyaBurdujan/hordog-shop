@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Акции"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container">
+            <div class="page__content">
+                <div class="page__heading promotions">
+                    <p>Акции</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="banner__promo promotions">
+        <div class="container">
+            <div class="banner__image">
+                <img class="img-fluid" src="@img/banner_promo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="sale">
+        <div class="container">
+            <div class="title">Акции</div>
+            <div class="sale__items">
+                <div class="item">
+                    <img class="img-fluid" src="@img/products/product_13.png" alt="">
+                    <a class="item__title" href="">Набор “Собачий Листопад-2”</a>
+                </div>
+                <div class="item">
+                    <img class="img-fluid" src="@img/products/product_14.png" alt="">
+                    <a class="item__title" href="">Набор “Собачий Листопад-1”</a>
+                </div>
+                <div class="item">
+                    <img class="img-fluid" src="@img/products/product_15.png" alt="">
+                    <a class="item__title" href="">Набор “Хордог Лото-1”</a>
+                </div>
+                <div class="item">
+                    <img class="img-fluid" src="@img/products/product_16.png" alt="">
+                    <a class="item__title" href="">Набор “Победа”</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products promotions">
+        <div class="container">
+            <div class="title">Товары со скидкой</div>
+            <div class="product__items">
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_5.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 380 ₽</span>
+                    </div>
+                    <div class="count">1 кг.</div>
+                    <a class="product__title" href="">Желудки утиные сушено-вяленые</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_6.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 300 ₽</span>
+                    </div>
+                    <div class="count">100 г.</div>
+                    <a class="product__title" href="">Мелкая говяжья сушено-вяленая жилка</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_7.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">14 шт</div>
+                    <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердце говяжье)</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_8.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 330 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Свиные уши для собак</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_9.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 590 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_10.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 790 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_11.png" alt="">
+                    <div class="prices">
+                        <span class="old_price">550 ₽</span>
+                        <span class="price new_price">495 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Бублик из бычьего корня</a>
+                    <button class="add">В корзину</button>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_12.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                    <button class="add">В корзину</button>
+                </div>
+            </div>
+            <button class="view__more promotions" type="button">Показать ещё <img src="@img/icons/ic-down-arrow.svg" alt=""></button>
+        </div>
+    </div>
+
+
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

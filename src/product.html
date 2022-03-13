@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Продукт"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+        <div class="popup">
+            <div class="popup__header">
+                <div class="container">
+                    <div class="cart__product">
+                        <div class="product">
+                            <img src="./img/products/img_popup.png" alt="">
+                            <div class="product__title">
+                                <p>Бублик из бычьего корня</p>
+                                <div class="product__title_description">
+                                    <span>100 грамм</span>
+                                    <img src="./img/icons/star_popup.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <button class="btn__minus" type="button">
+                                <img data-action="minus" src="./img/icons/minus.svg" alt="">
+                            </button>
+                            <div class="counter" data-counter>1</div>
+                            <button class="btn__plus" type="button">
+                                <img data-action="plus" src="./img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="prices">
+                            <span class="old_price"> 550 ₽</span>
+                            <span class="price new_price"> 495 ₽</span>
+                        </div>
+                        <button class="add__cart" type="button">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="popup__product">
+                    <img class="product" src="./img/products/product-popup.png" alt="">
+                    <img class="small__product" src="./img/products/small-img-popup.png" alt="">
+                    <div class="popup__product_info">
+                        <div class="reviews__product_info">
+                            <div class="reviews__product_add">
+                                <div class="prices popup">
+                                    <span class="old_price"> 550 ₽</span>
+                                    <span class="price new_price"> 495 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup__add_cart">
+                            <div class="number">
+                                <button class="btn__minus" type="button">
+                                    <img data-action="minus" src="./img/icons/minus.svg" alt="">
+                                </button>
+                                <div class="counter" data-counter>1</div>
+                                <button class="btn__plus" type="button">
+                                    <img data-action="plus" src="./img/icons/plus.svg" alt="">
+                                </button>
+                            </div>
+                            <button class="add popup">В корзину</button>
+                        </div>
+                        <div class="add__favorites">
+                            <img src="./img/icons/ic-favorites-pop.svg" alt="">
+                            <p>В избранное</p>
+                        </div>
+                        <div class="popup__placeholder delivery">
+                            <img src="./img/icons/ic-truck-pop.svg" alt="">
+                            <div class="placeholder__delivery_text">
+                                <h6>Доставка по всему Миру!</h6>
+                                <p>Доставка курьером — <span>от 399 ₽</span></p>
+                                <p>Доставка в пункт выдачи — <span>от 199 ₽</span></p>
+                            </div>
+                            </div>
+                        <div class="popup__placeholder qiality">
+                            <img src="./img/icons/ic-quality.svg" alt="">
+                            <div class="placeholer__quality_text">
+                                <h6>Гарантия качества</h6>
+                                <p>Если Вам не понравилось качество нашей продукции, мы вернем деньги, либо сделаем все возможное, чтобы удовлетворить ваши
+                                нужды.</p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="popup__description">
+                    <h3>Описание</h3>
+                    <p>Бублик из бычьего корня-забавная, интересная, вкусная, а главное полезная вкусняшка для вашего любимца.
+                    Неповторимый вкус этого лакомства надолго отвлечет Вашего питомца от любых дел.</p>
+                </div>
+                <div class="popup__specifications">
+                    <h3>Характеристики</h3>
+                    <div class="specifications_info">
+                        <div class="specification">
+                            <p>Вес</p>
+                            <span>1 шт 120-200 грамм</span>
+                        </div>
+                        <div class="specification">
+                            <p>Цена</p>
+                            <span>490 ₽ за 100 грамм</span>
+                        </div>
+                        <div class="specification">
+                            <p>Польза</p>
+                            <div class="specification__info">
+                                <span>Большое содержание аминокислот и микроэлементов оказывает положительное воздействие на общий обмен веществ собаки.</span>
+                                <span>Большое содержание аминокислот и микроэлементов оказывает положительное воздействие на общий обмен веществ собаки.</span>
+                                <span>Большое содержание аминокислот и микроэлементов оказывает положительное воздействие на общий обмен веществ собаки.</span>
+                                <span>Большое содержание аминокислот и микроэлементов оказывает положительное воздействие на общий обмен веществ собаки.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__reviews">
+                    <h3>Отзывы</h3>
+                    <button class="add__review_btn" type="button">Написать отзыв</button>
+                    <div class="popup__reviews__text">
+                        <div class="review_user__text popup">
+                            <div class="user__data">
+                                <span class="name">Анастасия</span>
+                                <span class="data">08 июл 2021</span>
+                            </div>
+                            <div class="raiting">
+                                <img src="@img/reviews/stars01.svg" alt="">
+                            </div>
+                            <div class="city">
+                                Елизово
+                            </div>
+                            <div class="review__text">
+                                <p>«Вчера мы получили посылку с вкусняшками от @hordog.ru
+                                    В нашем наборе много разновидностей лакомств, в том числе рога оленя, рубец говяжий, баранье легкое, нос
+                                    говяжий, копыто
+                                    северного оленя, уши говяжьи, вымя говяжье, корень говяжий, печенье с яблоком.Такого запаса нам точно хватит
+                                    надолго.</p>
+                                <p>Лайфун уже оценил вкусняшки! Спасибо за такой замечательный набор!»</p>
+                            </div>
+                        </div>
+                        <div class="review_user__text popup">
+                            <div class="user__data">
+                                <span class="name">Оксана</span>
+                                <span class="data">12 авг 2021</span>
+                            </div>
+                            <div class="raiting">
+                                <img src="@img/reviews/stars02.svg" alt="">
+                            </div>
+                            <div class="city">
+                                Йошкар-Ола, отзыв из инстгарам hordog.staya
+                            </div>
+                            <div class="review__text">
+                                <p>«Ну и как уж без подарка ,для моей девочки))) Огромное спасибо за вкусняхи @hordog.ru Одна упаковка чего
+                                    стоит а уж то
+                                    что было внутри вызвало полных восторг у нашей девочки. Что приятно удивило что при покупке у них в магазине
+                                    сделали
+                                    скидку))) И положили презент»</p>
+                            </div>
+                            <div class="review__img">
+                                <img src="@img/reviews/reviw-img01.png" alt="">
+                                <img src="@img/reviews/review-img02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="review_user__text popup">
+                            <div class="user__data">
+                                <span class="name">Анна</span>
+                                <span class="data">22 сен 2021</span>
+                            </div>
+                            <div class="raiting">
+                                <img src="@img/reviews/stars03.svg" alt="">
+                            </div>
+                            <div class="city">
+                                Королёв, отзыв из инстаграмм, hordog.staya
+                            </div>
+                            <div class="review__text">
+                                <p>У Масяни был день рождения! И нам приехала собачья радость от @hordog.ru!
+                                    Спасибо всей команде за собачье настроение</p>
+                            </div>
+                            <div class="review__img">
+                                <img src="@img/reviews/review-img03.png" alt="">
+                            </div>
+                        </div>   
+                    </div>
+                    <button class="all__reviews_btn">Все отзывы <img src="img/icons/ic-right-arrow-pop.svg" alt=""></button>
+                </div>
+                <div class="products popup">
+                    <div class="container">
+                        <div class="title">С этим товаром заказывают</div>
+                        <div class="product__items">
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_5.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 380 ₽</span>
+                                </div>
+                                <div class="count">1 кг.</div>
+                                <a class="product__title" href="">Желудки утиные сушено-вяленые</a>
+                                <button class="add">В корзину</button>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_6.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 300 ₽</span>
+                                </div>
+                                <div class="count">100 г.</div>
+                                <a class="product__title" href="">Мелкая говяжья сушено-вяленая жилка</a>
+                                <button class="add">В корзину</button>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_7.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 495 ₽</span>
+                                </div>
+                                <div class="count">14 шт</div>
+                                <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердце говяжье)</a>
+                                <button class="add">В корзину</button>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_8.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 330 ₽</span>
+                                </div>
+                                <div class="count">100 г</div>
+                                <a class="product__title" href="">Свиные уши для собак</a>
+                                <button class="add">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="banners">
+                    <div class="container">
+                        <div class="banner__actual">
+                            <img class="img-fluid" src="@img/banner_actual1.png" alt="">
+                            <img class="img-fluid" src="@img/banner_actual2.png" alt="">
+                        </div>
+                    </div>
+                </section>
+                <div class="products review__page">
+                    <div class="container">
+                        <div class="title">Вы смотрели</div>
+                        <div class="product__items last-section">
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_17.png" alt="">
+                                <div class="prices">
+                                    <span class="price">590 ₽</span>
+                                </div>
+                                <div class="count">1 шт</div>
+                                <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_18.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 790 ₽</span>
+                                </div>
+                                <div class="count">1 шт</div>
+                                <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_19.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 495 ₽</span>
+                                </div>
+                                <div class="count">1 шт</div>
+                                <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_20.png" alt="">
+                                <div class="prices">
+                                    <span class="old_price"> 550 ₽</span>
+                                    <span class="price new_price"> 495 ₽</span>
+                                </div>
+                                <div class="count">100 г</div>
+                                <a class="product__title" href="">Бублик из бычьего корня</a>
+                            </div>
+                            <div class="product">
+                                <img class="img-fluid" src="@img/products/product_21.png" alt="">
+                                <div class="prices">
+                                    <span class="price"> 340 ₽</span>
+                                </div>
+                                <div class="count">14 шт</div>
+                                <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердечко</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

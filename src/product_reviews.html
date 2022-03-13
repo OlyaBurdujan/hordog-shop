@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    @@include('layouts/head.html', {
+        "title": "Отзывы товара"
+    })
+    
+<body>
+    
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Назад </a>
+                </a>
+                <div class="page__heading">
+                    <p>Отзывы о товаре “Бублик из бычьего корня”</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews__product">
+        <div class="container">
+            <div class="reviews__product_info">
+                <div class="reviews__product_name">
+                    <div class="product__name_img">
+                        <img src="@img/product__name_revie/image.png" alt="">
+                    </div>
+                    <div class="product__name_text">
+                        <p>Бублик из бычьего корня</p>
+                        <div class="raiting__review">
+                            <img src="@img/product__name_revie/stars.svg" alt="">
+                            <span>81 отзыв</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__product_add">
+                    <div class="prices">
+                        <span class="old_price"> 550 ₽</span>
+                        <span class="price new_price"> 495 ₽</span>
+                    </div>
+                    <button class="add">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="placeholder__quality">
+        <div class="container">
+            <div class="placeholder__quality_content">
+                <div class="write__review">
+                <img src="@img/product__name_revie/ic-comments.svg" alt="">
+                <p>Еще никто не оставил отзыв. Станьте первым!</p>
+                </div>
+                <button class="write__review_btn" type="button">Написать отзыв</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="comments page__review">
+        <div class="container">
+            <div class="review_user__text ">
+                <div class="user__data">
+                    <span class="name">Анастасия</span>
+                    <span class="data">08 июл 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars01.svg" alt="">
+                </div>
+                <div class="city">
+                    Елизово
+                </div>
+                <div class="review__text">
+                    <p>«Вчера мы получили посылку с вкусняшками от @hordog.ru
+                        В нашем наборе много разновидностей лакомств, в том числе рога оленя, рубец говяжий, баранье
+                        легкое, нос
+                        говяжий, копыто
+                        северного оленя, уши говяжьи, вымя говяжье, корень говяжий, печенье с яблоком.Такого запаса нам
+                        точно хватит
+                        надолго.</p>
+                    <p>Лайфун уже оценил вкусняшки! Спасибо за такой замечательный набор!»</p>
+                </div>
+            </div>
+            <div class="review_user__text">
+                <div class="user__data">
+                    <span class="name">Оксана</span>
+                    <span class="data">12 авг 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars02.svg" alt="">
+                </div>
+                <div class="city">
+                    Йошкар-Ола, отзыв из инстгарам hordog.staya
+                </div>
+                <div class="review__text">
+                    <p>«Ну и как уж без подарка ,для моей девочки))) Огромное спасибо за вкусняхи @hordog.ru Одна
+                        упаковка чего стоит а уж то
+                        что было внутри вызвало полных восторг у нашей девочки. Что приятно удивило что при покупке у
+                        них в магазине сделали
+                        скидку))) И положили презент»</p>
+                </div>
+                <div class="review__img">
+                    <img src="@img/reviews/reviw-img01.png" alt="">
+                    <img src="@img/reviews/review-img02.png" alt="">
+                </div>
+            </div>
+            <div class="review_user__text">
+                <div class="user__data">
+                    <span class="name">Анна</span>
+                    <span class="data">22 сен 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars03.svg" alt="">
+                </div>
+                <div class="city">
+                    Королёв, отзыв из инстаграмм, hordog.staya
+                </div>
+                <div class="review__text">
+                    <p>У Масяни был день рождения! И нам приехала собачья радость от @hordog.ru!
+                        Спасибо всей команде за собачье настроение</p>
+                </div>
+                <div class="review__img">
+                    <img src="@img/reviews/review-img03.png" alt="">
+                </div>
+            </div>
+            <div class="review_user__text">
+                <div class="user__data">
+                    <span class="name">Дейкало Анна</span>
+                    <span class="data">22 сен 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars02.svg" alt="">
+                </div>
+                <div class="city">
+                    Моска, Издатель
+                </div>
+                <div class="review__text">
+                    <p>Замечательные вкусняшки, мой Собак забыл все на свете, даже хозяев . А с какой любовью и
+                        вниманием все упаковано. Очень тронуло . Молодцы</p>
+                </div>
+            </div>
+            <div class="review_user__text">
+                <div class="user__data">
+                    <span class="name">Эльвира Павлова</span>
+                    <span class="data">22 сен 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars02.svg" alt="">
+                </div>
+                <div class="city">
+                    Санкт-Петербург
+                </div>
+                <div class="review__text">
+                    <p>Доброе время суток!
+                        Товар пришел отлично упакованным.
+                        Первая проба прошла на ура,- давали утиные желудки и щеки говяжьи.
+                        Очень позитивное послание от упаковщика. Мы оценили.
+                        PS единственная просьба: если вы меняете что-то из перечня, клиентом затребованного, сообщайте
+                        это вкратце, хотя бы
+                        сообщением.
+                        Благодарим от всей честной компании.</p>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/reviw-img04.png" alt="">
+                </div>
+            </div>
+            <div class="review_user__text">
+                <div class="user__data">
+                    <span class="name">Георгий</span>
+                    <span class="data">22 сен 2021</span>
+                </div>
+                <div class="raiting">
+                    <img src="@img/reviews/stars03.svg" alt="">
+                </div>
+                <div class="city">
+                    Санкт-Петербург, Event mananger
+                </div>
+                <div class="review__text">
+                    <p>Хочу сказать огромное спасибо этим прекрасным людям, кто занимается таким делом! Вся семья в
+                        восторге, а себек не может
+                        найти себе место от того аромата который исходит из коробки, не может оторваться, то рог грызет,
+                        то копыто)))
+                        Удивительный подход к каждому клиенту! Каждый из Вас кто закажет у этих прекрасных людей, будет
+                        удивлен, когда откроет
+                        коробку! От всей нашей семьи и хаски Лилит, желаем процветания и благополучия! Огромное Вам
+                        спасибо, за все ваши труды!!</p>
+                </div>
+            </div>
+            <button class="view__more review" type="button">Показать ещё <img src="@img/icons/ic-down-arrow.svg" alt=""></button>
+        </div>
+    </div>
+
+    @@include('layouts/footer.html', {})
+    
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Адреса доставки"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+        <div class="page__title">
+            <div class="container container-small">
+                <div class="page__content">
+                    <a class="previous__page" href="">
+                        <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                        Назад </a>
+                    </a>
+                    <div class="page__heading">
+                        <p>Адреса доставки</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="delivery__address">
+                <div class="container container-small">
+                    <div class="delivery__info">
+                        <div class="delivery__grid three-items">
+                            <div class="delivery__form">
+                                <label for="">Страна</label>
+                                <select id='countries'>
+                                    <option value="" selected>Россия</option>
+                                    <option value="">Молдова</option>
+                                    <option value="">Франция</option>
+                                    <option value="">Италия</option>
+                                    <option value="">Греция</option>
+                                </select>
+                            </div>
+                            <div class="delivery__form">
+                                <label for="">Населённый пункт</label>
+                                <input type="text" name="region" id="" value="Самара" placeholder="">
+                            </div>
+                            <div class="delivery__form">
+                                <label for="">Индекс</label>
+                                <input type="text" name="index" id="" value="443096" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="delivery__grid">
+                            <div class="delivery__form">
+                                <label for="">Улица</label>
+                                <input type="text" name="street" id="" value="пр.Карла-Маркса" placeholder="">
+                            </div>
+                            <div class="delivery__form">
+                                <label for="">Дом</label>
+                                <input type="text" name="home__number" id="" value="228а" placeholder="">
+                            </div>
+                            <div class="delivery__form">
+                                <label for="">Квартира</label>
+                                <input type="text" name="appartment" id="" value="455" placeholder="">
+                            </div>
+                            <div class="delivery__form">
+                                <label for="">Домофон</label>
+                                <input type="text" name="intercome" id="" placeholder="13"> 
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn__save" type="button">Сохранить</button>
+                </div>
+            </div>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

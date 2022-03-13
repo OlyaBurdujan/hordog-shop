@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Корзина"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-middle">
+            <div class="page__content search">
+                <div class="page__heading cart">
+                    <h6><span>4 товара</span> в корзине</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="cart">
+        <div class="container container-middle">
+            <div class="cart__content">
+                <div class="cart__products">
+                    <div class="cart__product">
+                        <div class="product">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                            <div class="product__name">
+                                <p>Рога оленя для собак весом от 10 до 30 кг. Размер XL</p>
+                                <span>Размер XL от 30 кг</span>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <button class="btn__minus" type="button" data-action="minus">
+                                <img src="./img/icons/minus.svg" alt="">
+                            </button>
+                            <div class="counter" data-counter>1</div>
+                            <button class="btn__plus" type="button" data-action="plus">
+                                <img src="./img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="prices">
+                            <span class="old_price"> 550 ₽</span>
+                            <span class="price new_price"> 495 ₽</span>
+                        </div>
+                        <button type="button"><img src="./img/icons/ic-trash.svg" alt=""></button>
+                    </div>
+                    <div class="cart__product">
+                        <div class="product">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                            <div class="product__name">
+                                <p>Рога оленя для собак весом от 10 до 30 кг. Размер XL</p>
+                                <span>Размер XL от 30 кг</span>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <button class="btn__minus" type="button" data-action="minus">
+                                <img src="./img/icons/minus.svg" alt="">
+                            </button>
+                            <div class="counter" data-counter>1</div>
+                            <button class="btn__plus" type="button" data-action="plus">
+                                <img src="./img/icons/plus.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="prices">
+                            <span class="old_price"> 550 ₽</span>
+                            <span class="price new_price"> 495 ₽</span>
+                        </div>
+                        <button type="button"><img src="./img/icons/ic-trash.svg" alt=""></button>
+                    </div>
+                    <div class="cart__product">
+                        <div class="product">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                            <div class="product__name">
+                                <p>Рога оленя для собак весом от 10 до 30 кг. Размер XL</p>
+                                <span>Размер XL от 30 кг</span>
+                            </div>
+                        </div>
+                        <div class="ordered__item_gift">
+                            <img src="./img/icons/ic-gift.svg" alt="">
+                            <div class="gift__text">
+                                <p>Подарок</p>
+                                <span>за первый заказ!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping__cart">
+                    <div class="cart__total">
+                        <h5>Ваша корзина</h5>
+                        <ul class="total__list">
+                            <li>
+                                <p>Товары (4)</p>
+                                <span class="price">3 925 ₽</span>
+                            </li>
+                            <li>
+                                <p>Скидка</p>
+                                <span class="price discount">- 690 ₽</span>
+                            </li>
+                        </ul>
+                        <div class="total__sum">
+                            <p>Общая стоимость</p>
+                            <span>3 235 ₽</span>
+                        </div>
+                        <a href="" class="btn__link">Перейти к оформлению</a>
+                    </div>
+                    <div class="delivery">
+                        <img src="./img/icons/ic-truck-pop.svg" alt="">
+                        <div class="placeholder__delivery_text">
+                            <h6>Доставка по всему Миру!</h6>
+                            <p>Доставка курьером — <span>от 399 ₽</span></p>
+                            <p>Доставка в пункт выдачи — <span>от 199 ₽</span></p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <div class="products recomandation shopping__cart">
+        <div class="container container-middle">
+            <div class="title">С этим товаром заказывают</div>
+            <div class="product__items last-section">
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_17.png" alt="">
+                    <div class="prices">
+                        <span class="price">590 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_18.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 790 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_19.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_20.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Бублик из бычьего корня</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_21.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 340 ₽</span>
+                    </div>
+                    <div class="count">14 шт</div>
+                    <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердечко</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="banners">
+        <div class="container">
+            <div class="banner__actual cart">
+                <img class="img-fluid" src="@img/banner_actual1.png" alt="">
+                <img class="img-fluid" src="@img/banner_actual2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="products cart">
+        <div class="container">
+            <div class="title">Вы смотрели</div>
+            <div class="product__items last-section">
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_17.png" alt="">
+                    <div class="prices">
+                        <span class="price">590 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для мелких пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_18.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 790 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для средних пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_19.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                    <div class="count">1 шт</div>
+                    <a class="product__title" href="">Игрушка-погрызушка для крупных пород</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_20.png" alt="">
+                    <div class="prices">
+                        <span class="old_price"> 550 ₽</span>
+                        <span class="price new_price"> 495 ₽</span>
+                    </div>
+                    <div class="count">100 г</div>
+                    <a class="product__title" href="">Бублик из бычьего корня</a>
+                </div>
+                <div class="product">
+                    <img class="img-fluid" src="@img/products/product_21.png" alt="">
+                    <div class="prices">
+                        <span class="price"> 340 ₽</span>
+                    </div>
+                    <div class="count">14 шт</div>
+                    <a class="product__title" href="">Печенья с яблоком (печень говяжья, сердечко</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

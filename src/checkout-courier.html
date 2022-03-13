@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Оформление заказа"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-middle">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    Вернуться в корзину </a>
+                </a>
+                <div class="page__heading">
+                    <p>Оформление заказа</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ordering">
+        <div class="container container-middle">
+            <div class="ordering__content">
+                <div class="delivering">
+                    <h2>Как доставить заказ?</h2>
+                    <div class="delivering__content">
+                        <label class="type__delivery">
+                            <input name="" value="" type="checkbox">
+                            <div class="type__delivery_info">
+                                <div class="headline">
+                                    <img src="./img/icons/ic-home.svg" alt="">
+                                    <p>Курьером</p>
+                                </div>
+                                <div class="delivery__data">
+                                    <p>с 14 окт 2021, от 399 ₽</p>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="type__delivery">
+                            <input name="" value="" type="checkbox">
+                            <div class="type__delivery_info">
+                                <div class="headline">
+                                    <img src="./img/icons/ic-store.svg" alt="">
+                                    <p>В пункт выдачи</p>
+                                </div>
+                                <div class="delivery__data">
+                                    <p>с 21 окт 2021, от 199 ₽</p>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="delivery__methods">
+                        <h3>Способ</h3>
+                        <div class="delivery__methods_content">
+                            <label class="delivery__method_info">
+                                <input name="" value="" type="checkbox">
+                                <div class="delivery__method">
+                                    <div class="badge">Дешевая</div>
+                                    <div class="delivery__method_title">
+                                        <img src="./img/icons/ozon.svg" alt="">
+                                        <p>Ozon Rocket</p>
+                                    </div>
+                                    <div class="delivery__method_data">
+                                        <div class="price">
+                                            <p>стоимость</p>
+                                            <span>399 ₽</span>
+                                        </div>
+                                        <div class="data">
+                                            <p>дата</p>
+                                            <span class="data__info">21 окт 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="delivery__method_info">
+                                <input name="" value="" type="checkbox">
+                                <div class="delivery__method">
+                                    <div class="badge fast">Быстрая</div>
+                                    <div class="delivery__method_title">
+                                        <img src="./img/icons/boxberry.svg" alt="">
+                                        <p>Boxberry</p>
+                                    </div>
+                                    <div class="delivery__method_data">
+                                        <div class="price">
+                                            <p>стоимость</p>
+                                            <span>399 ₽</span>
+                                        </div>
+                                        <div class="data">
+                                            <p>дата</p>
+                                            <span class="data__info">21 окт 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="delivery__method_info">
+                                <input name="" value="" type="checkbox">
+                                <div class="delivery__method">
+                                    <div class="delivery__method_title">
+                                        <img src="./img/icons/sdek.svg" alt="">
+                                        <p>СДЭК</p>
+                                    </div>
+                                    <div class="delivery__method_data">
+                                        <div class="price">
+                                            <p>стоимость</p>
+                                            <span>399 ₽</span>
+                                        </div>
+                                        <div class="data">
+                                            <p>дата</p>
+                                            <span class="data__info">21 окт 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="delivering__address">
+                        <h3>Адресс</h3>
+                        <div class="delivery__info">
+                            <div class="delivery__grid three-items">
+                                <div class="delivery__form">
+                                    <label for="">Страна</label>
+                                    <select id='countries'>
+                                        <option value="" selected>Россия</option>
+                                        <option value="">Молдова</option>
+                                        <option value="">Франция</option>
+                                        <option value="">Италия</option>
+                                        <option value="">Греция</option>
+                                    </select>
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Населённый пункт</label>
+                                    <input type="text" name="region" id="" value="Самара" placeholder="">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Индекс</label>
+                                    <input type="text" name="index" id="" value="443096" placeholder="">
+                                </div>
+                            </div>
+                            <div class="delivery__grid">
+                                <div class="delivery__form">
+                                    <label for="">Улица</label>
+                                    <input type="text" name="street" id="" value="пр.Карла-Маркса" placeholder="">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Дом</label>
+                                    <input type="text" name="home__number" id="" value="228а" placeholder="">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Квартира</label>
+                                    <input type="text" name="appartment" id="" value="455" placeholder="">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Домофон</label>
+                                    <input type="text" name="intercome" id="" placeholder="13">
+                                </div>
+                            </div>
+                            <form class="comment">
+                                <textarea id="" name=""
+                                placeholder="Комментарий для курьера"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="delivering__info_checkout">
+                        <label class="delivering__info_ozon" >
+                            <input name="" value="" type="checkbox">
+                            <div class="profile__info">
+                                <div class="headline">
+                                    <div class="title">
+                                        <img src="./img/icons/ozon.svg" alt="">
+                                        <p>Ozon Rocket</p>
+                                    </div>
+                                    <img src="./img/icons/ic-trash.svg" alt="">
+                                </div>
+                                <div class="home__address_items">
+                                    <div class="home__address_item">
+                                        <img src="./img/icons/ic-home-checkout.svg" alt="">
+                                        <p>г. Самара, пр. Карла-Маркса, д 228а, к. 455</p>
+                                    </div>
+                                    <div class="home__address_item">
+                                        <img src="./img/icons/ic-truck-checkout.svg" alt="">
+                                        <p>Доставят 21 октября</p>
+                                    </div>
+                                    <div class="home__address_item">
+                                        <img src="./img/icons/ic-time-checkout.svg" alt="">
+                                        <p>09:00 – 21:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="recipient">
+                        <h2>Кто получит?</h2>
+                        <form class="form__user_info" action="">
+                            <div class="user__info">
+                                <div class="form__info">
+                                    <label for="">Имя</label>
+                                    <input type="text" name="first_name" id="" value="Александр" placeholder="">
+                                </div>
+                                <div class="form__info">
+                                    <label for="">Фамилия</label>
+                                    <input type="text" name="first_name" id="" value="Суворов" placeholder="">
+                                </div>
+                                <div class="form__info">
+                                    <label for="">Телефон</label>
+                                    <input type="text" name="first_name" id="" value="+7 (977)980-12-09" placeholder="">
+                                </div>
+                                <div class="form__info">
+                                    <label for="">Почта</label>
+                                    <input type="text" name="first_name" id="" value="alexander@mail.com" placeholder="">
+                                </div>
+                            </div>
+                            <label class="notifications">
+                                    <input class="check__mark" type="checkbox" name="" value="">
+                                    Я хочу получать рекламные сообщения и новости о товарах и услугах
+                            </label>
+                        </form>
+                    </div>
+                    <div class="pet">
+                        <h2>Кто будет хрумкать?</h2>
+                        <div class="delivery__info">
+                            <div class="delivery__grid">
+                                <div class="delivery__form pet">
+                                    <input type="text" name="street" id="" value="" placeholder="Кличка">
+                                </div>
+                                <div class="delivery__form pet">
+                                    <input type="text" name="home__number" id="" value="" placeholder="Порода">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Дата рождения</label>
+                                    <input class="birthday" type="date">
+                                </div>
+                                <div class="delivery__form">
+                                    <label for="">Вес</label>
+                                    <input type="text" name="intercome" id="" placeholder="" value="16">
+                                </div>
+                            </div>
+                            <form class="comment pet">
+                                <textarea id="" name="" placeholder="Особенности (заглатывает, аллергия и тд)"></textarea>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pay__order">
+                        <h2>Способ оплаты</h2>
+                        <label class="pay__order_card">
+                            <input type="checkbox" name="" value="" placeholder="">
+                            <div class="pay__order_content">
+                                <div class="headline">
+                                    <img src="./img/icons/ic-card.svg" alt="">
+                                    <p>Картой онлайн</p>
+                                </div>
+                                <span>Оплата картой онлайн на сайте</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="ordering__content_cart">
+                    <div class="cart__product">
+                        <div class="heading">
+                            <p>Ваш заказ</p>
+                            <button>Изменить</button>
+                        </div>
+                        <div class="products__selected">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                            <img src="./img/products/ordered__item1.png" alt="">
+                        </div>
+                        <div class="payment__items">
+                            <div class="payment__item">
+                                <p>Товары (4)</p>
+                                <span>3 925 ₽</span>
+                            </div>
+                            <div class="payment__item">
+                                <p>Доставка курьером</p>
+                                <span>399 ₽</span>
+                            </div>
+                            <div class="payment__item discount">
+                                <p>Скидка</p>
+                                <span>- 690 ₽</span>
+                            </div>
+                            <div class="payment__item total">
+                                <p>Итого к оплате</p>
+                                <span>3 235 ₽</span>
+                            </div>
+                        </div>
+                        <button class="pay">Оплатить</button>
+                    </div>
+                    <div class="real__data">
+                        <img src="./img/icons/ic-attention-line.svg" alt="">
+                        <div class="real__data_info">
+                            <p>Указывайте реальные данные</p>
+                            <span>У вас могут попросить паспорт, прежде чем вручить оплаченный заказ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

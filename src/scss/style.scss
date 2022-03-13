@@ -1,0 +1,43 @@
+// base
+
+@import "base/base";
+
+// block
+@import "block/nav";
+@import "block/header";
+@import "block/banner";
+@import "block/home";
+@import "block/paginator";
+
+// components
+@import "components/product";
+@import "components/sale";
+@import "components/news";
+@import "components/contact-form";
+@import "components/reviews";
+@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/btns";
+
+// pages
+@import "pages/catalog";
+@import "pages/not_found";
+@import "pages/news";
+@import "pages/article";
+@import "pages/product_reviews";
+@import "pages/favorites";
+@import "pages/subcatalog";
+@import "pages/add-review";
+@import "pages/profile-details";
+@import "pages/delivery-address";
+@import "pages/my-orders";
+@import "pages/order-info";
+@import "pages/contacts";
+@import "pages/delivery-payment";
+@import "pages/faq";
+@import "pages/profile";
+@import "pages/product";
+@import "pages/cart";
+@import "pages/promo-product";
+@import "pages/checkout-courier";
+// @import "pages/search-focus";

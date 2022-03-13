@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('layouts/head.html', {
+"title": "Заказ"
+})
+
+<body>
+
+    @@include('layouts/header.html', {})
+
+    <div class="page__title">
+        <div class="container container-small">
+            <div class="page__content">
+                <a class="previous__page" href="">
+                    <img src="@img/catalog/icons/ic-left-arrow.svg" alt="">
+                    К списку заказов </a>
+                </a>
+                <div class="page__heading">
+                    <p>Заказ № 03825208-0004</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="orders">
+        <div class="container container-small">
+            <div class="orders__status">
+                <p>Заказ</p>
+                <span class="status__delivering">Доставляется</span>
+                <span class="status__processing">Обрабатывается</span>
+            </div>
+            <div class="ordered__items">
+                <div class="ordered__item">
+                    <div class="ordered__item_img">
+                        <img src="./img/products/ordered__item1.png" alt="">
+                        <div class="ordered__item_title">
+                            <h5>Рога оленя для собак весом от 10 до 30 кг. Размер XL</h5>
+                            <span>Размер XL от 30 кг</span>     
+                        </div>
+                           
+                    </div>
+                    <div class="ordered__item_count">
+                        <p>2 шт</p>    
+                    </div>
+                    <div class="ordered__item_prices">
+                        <span class="old_price">3 430 ₽</span>
+                        <span class="price new_price">2 740 ₽</span>
+                    </div>
+
+                </div>
+                <div class="ordered__item">
+                    <div class="ordered__item_img">
+                        <img src="./img/products/ordered__item2.png" alt="">
+                        <div class="ordered__item_title">
+                            <h5>Бублик из бычьего корня</h5>
+                            <span>100 грамм</span>
+                        </div>
+                    </div>
+                    <div class="ordered__item_count">
+                        <p>2 шт</p>
+                    </div>
+                    <div class="ordered__item_prices">
+                        <span class="price"> 495 ₽</span>
+                    </div>
+                
+                </div>
+                <div class="ordered__item">
+                    <div class="ordered__item_img">
+                        <img src="./img/products/ordered__item3.png" alt="">
+                        <div class="ordered__item_title">
+                            <h5>Легкое говяжье - пластины</h5>
+                            <span>100 грамм</span>
+                        </div>
+                
+                    </div>
+                    <div class="ordered__item_count">
+                        <p>2 шт</p>
+                    </div>
+                    <div class="ordered__item_gift">
+                        <img src="./img/icons/ic-gift.svg" alt="">
+                        <div class="gift__text">
+                            <p>Подарок</p>
+                            <span>за первый заказ!</span>    
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="order__point">
+                <h2>Доставка в пункт выдачи</h2>
+                <ul class="order__shop">
+                    <li class="name__shop">
+                        <img src="./img/icons/ozon.svg" alt="">
+                        <p>Пункт Ozon</p>
+                    </li>
+                    <li>
+                        <img src="./img/icons/ic-store.svg" alt="">
+                        <p>обл. Самарская, г. Самара, ул. Чернореченская, д. 49</p>
+                    </li>
+                    <li>
+                        <img src="./img/icons/ic-box.svg" alt="">
+                        <p>Можно забрать 21 октября</p>
+                    </li>
+                    <li>
+                        <img src="./img/icons/ic-time.svg" alt="">
+                        <p>Ежедневно 09:00 – 21:00</p>
+                    </li>
+                    <li>
+                        <img src="./img/icons/ic-phone.svg" alt="">
+                        <a href="tel:+7(987)908-89-12">+7(987)908-89-12</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="recipient">
+                <h2>Получатель</h2>
+                <ul class="recipient__info">
+                    <li>
+                        <img src="./img/icons/ic-user.svg" alt="">
+                        <p>Александр Суворов</p>
+                    </li>
+                    <li>
+                        <img src="./img/icons/ic-phone.svg" alt="">
+                        <a href="tel:+7 (977) 980-12-09">+7 (977) 980-12-09</a>
+                    </li>
+                    <li>
+                        <img src="./img/icons/mail.svg" alt="">
+                        <a href="mailto:alexander@mail.com">alexander@mail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="payment">
+                <h2>Оплачено</h2>
+                <ul class="payment__info">
+                    <li>
+                        <p>Картой онлайн MasterCard **5384</p>
+                        <span>Оплачено</span>
+                    </li>
+                    <li>
+                        <p>Товары (4)</p>
+                        <span>3 925 ₽</span>
+                    </li>
+                    <li>
+                        <p>Доставка в пункт выдачи)</p>
+                        <span>199 ₽</span>
+                    </li>
+                    <li>
+                        <p>Скидка</p>
+                        <span class="payment__sale">- 690 ₽</span>
+                    </li>
+                </ul>
+                <div class="total__price">
+                    <p>Итого</p>
+                    <span>3 235 ₽</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @@include('layouts/footer.html', {})
+
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

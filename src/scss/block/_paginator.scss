@@ -1,0 +1,75 @@
+.page__number {
+    margin: 40px 0;
+    .page__number_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .btn__back {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px 12px 12px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            border: 1px solid #CFD8DC;
+            border-radius: 87px;
+            height: 48px;
+            width: 116px;
+            img {
+                margin-right: 8px;
+            }
+        }
+
+        .btn__page_number {
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                li {
+                    margin-right: 12px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #CFD8DC;
+                    box-sizing: border-box;
+                    border-radius: 61px;
+                    height: 48px;
+                    width: 48px;
+                    &.active {
+                        background: #FED700;
+                        border: 1px solid #FED700;
+                    }
+                }
+            }
+        }
+
+        .btn__next {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 12px 12px 24px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            border: 1px solid #CFD8DC;
+            border-radius: 87px;
+            height: 48px;
+            width: 116px;
+            img {
+                margin-left: 8px;
+            }
+        }
+    }
+}
