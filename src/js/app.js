@@ -44,26 +44,18 @@ function toggleAcc() {
 // каунтер для всех счетчиков 
 
 window.addEventListener('click', function (event) {
-
   if(event.target.dataset.action === 'plus') {
-
     const number = event.target.closest('.number');
-
     const counter = number.querySelector('[data-counter]');
-
     counter.innerText = ++counter.innerText;
   }
 
   if(event.target.dataset.action === 'minus') {
-
     const number = event.target.closest('.number');
-
     const counter = number.querySelector('[data-counter]');
-
     if(parseInt(counter.innerText) > 1 ) {
       counter.innerText = --counter.innerText;
     }
-    
   }
 
 });
